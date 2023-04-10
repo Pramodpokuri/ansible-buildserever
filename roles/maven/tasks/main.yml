@@ -1,6 +1,6 @@
-- name: Apt Update
+  - name: apt Update
     apt: update_cache=yes
-  - name : Install JDK & Git
+  - name: Install JDK & Git
     apt: name={{item}} state=present
     loop:
     - openjdk-8-jdk
